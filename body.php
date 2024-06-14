@@ -22,7 +22,7 @@
 </div>
         </div>
 
-        <div class="col-4"></div>
+        <div class=" "></div>
         </div>
 </div>
 </div>
