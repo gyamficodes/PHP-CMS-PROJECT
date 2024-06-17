@@ -34,14 +34,13 @@ cd mycms
 Step 2: Install Dependencies
 Install PHP dependencies using Composer:
 
-sh
-Copy code
+
+
 composer install
 Step 3: Configure Environment
 Copy the example environment file and update the necessary configuration settings:
 
-sh
-Copy code
+
 cp .env.example .env
 Update .env with your database credentials and other settings.
 
