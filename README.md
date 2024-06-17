@@ -29,7 +29,7 @@ Installation
 Step 1: Clone the Repository
 sh
 Copy code
-git clone https://github.com/yourusername/mycms.git
+git clone https://github.com/gyamficodes/php-cms-project.git
 cd mycms
 Step 2: Install Dependencies
 Install PHP dependencies using Composer:
