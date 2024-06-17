@@ -1,13 +1,5 @@
 <div class="container">
-<nav  class="navbar  navbar-light bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">
-      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
-    </a>
-  </div>
-</nav>
-
+  <?php   require "./pages/header-home.php"; ?>
 <div class="container-fluid my-3">
         <div class="row">
 
@@ -47,15 +39,27 @@
                     </form>
                   </div>
 
-                  <div  class=" ">
-                             <h1 class="mt-2">Categories</h1>
+                  <div  class=" mt-3 border p-3 ">
+                             <h3 class="">Categories</h3>
+
+                             <ul>
+                              <?php
+                                   for($i = 0 ; $i < 3 ; $i++ ){
+                                     ?>
+                                     <li>
+                                       <a href="#">Links <?php echo $i?></a>
+                                     </li>
+                                     <?php
+                                   }
+                              ?>
+                             </ul>
                   </div>
         </div>
         <!-- sidebar -->
         </div>
 </div>
+<?php   require "./pages/footer-home.php"; ?>
 </div>
-
 
 
 
