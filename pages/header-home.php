@@ -7,7 +7,7 @@
 
     <div class="d-flex ">
         <a class="nav-link text-white" href="#">Login</a>
-        <a class="nav-link text-white" href="#">Register</a>
+        <a class="nav-link text-white" href="register.php">Register</a>
     </div>
   </div>
 </nav>
