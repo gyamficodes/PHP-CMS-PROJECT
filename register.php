@@ -22,7 +22,7 @@
         </div>
         <div class="form-group  pb-3">
             <label for="">Password</label>
-            <input  type="Password" name="Password" id="" placeholder="Enter your Password" class="form-control">
+            <input  type="password" name="password" id="" placeholder="Enter your Password" class="form-control">
         </div>
         <button class=" mb-3 btn-primary" type="submit"  name="register">Register</button>
     </form>
