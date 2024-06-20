@@ -11,7 +11,7 @@
 
 <div class="d-flex aligns-items-center justify-content-center ">
     <form action="" method="post">
-    <h1  class=" text-center">Resgister</h1>
+    <h1  class=" text-center">Login</h1>
            
             <?php
                   if(isset( $error)){
@@ -28,10 +28,7 @@
                             <?php
                   }
             ?>
-        <div class="form-group py-3">
-            <label for="">Name</label>
-            <input  type="text" name="name" id="" placeholder="Enter your name" class="form-control">
-        </div>
+       
         <div class="form-group  pb-2">
             <label for="">Email</label>
             <input  type="email" name="email" id="" placeholder="Enter your email" class="form-control">
@@ -42,10 +39,10 @@
         </div>
         <hr>
         <p>
-            If user is alreadey registered
-        <a style="text-decoration: none;" href="login.php">Login</a>
+        If you don't have an account
+        <a style="text-decoration: none;" href="login.php">Register</a>
         </p>
-        <button class=" mb-3 btn-primary" type="submit"  name="register">Register</button>
+        <button class=" mb-3 btn-primary" type="submit"  name="register">Login</button>
     </form>
 </div>
 
