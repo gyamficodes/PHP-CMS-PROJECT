@@ -10,13 +10,13 @@ if(isset($_POST["register"])){
     $sql_check = "SELECT  * FROM   users WHERE email = '$email' ";
     $query_check =  mysqli_query($connection, $sql_check) or die("Cant check data");
       if(mysqli_num_rows($query_check) > 0){
-        echo "User already exist";
-        exit();
+        $error = "User already exist";
+      
       }else{
   //insert data to database;
   $sql = "INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$name','$email','$encrypt_password')";
   $query =  mysqli_query($connection, $sql) or die("Cant save data");
-  echo "Data save to base";
+ $success = " User register successfully";
       }
 }        
 ?>

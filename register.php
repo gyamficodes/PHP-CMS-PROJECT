@@ -6,12 +6,28 @@
 <div class="container">
  <?php
  require "./pages/header-home.php";
+ require  "inc/process.php";
  ?>
 
 <div class="d-flex aligns-items-center justify-content-center ">
-    <form action="inc/process.php" method="post">
+    <form action="" method="post">
     <h1  class=" text-center">Resgister</h1>
-
+           
+            <?php
+                  if(isset( $error)){
+                    ?>
+            <div class="alert alert-danger">
+                <strong> <?php  echo  $error; ?> </strong>
+            </div>
+                    <?php
+                  }elseif(isset( $success )){
+                    ?>
+                    <div class="alert alert-success">
+                        <strong> <?php  echo $success; ?> </strong>
+                    </div>
+                            <?php
+                  }
+            ?>
         <div class="form-group py-3">
             <label for="">Name</label>
             <input  type="text" name="name" id="" placeholder="Enter your name" class="form-control">
