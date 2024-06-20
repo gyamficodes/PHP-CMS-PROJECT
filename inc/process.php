@@ -18,5 +18,23 @@ if(isset($_POST["register"])){
   $query =  mysqli_query($connection, $sql) or die("Cant save data");
  $success = " User register successfully";
       }
-}        
+}  
+
+
+if(isset($_POST["login"])){
+  $email =  $_POST["email"];
+  $password =  $_POST["password"];
+  $encrypt_password =  md5($password);
+  //check if user already exist
+  $sql_check = "SELECT  * FROM   users WHERE email = '$email' AND password = '$encrypt_password' ";
+  $query_check =  mysqli_query($connection, $sql_check) or die("Cant check data");
+    if(mysqli_num_rows($query_check) > 0){
+       //Login to the dashboard
+ $success = " User login successfully";
+
+    }else{
+      //user Not found;
+$error = "User not found";
+    }
+}
 ?>

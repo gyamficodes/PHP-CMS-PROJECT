@@ -40,9 +40,9 @@
         <hr>
         <p>
         If you don't have an account
-        <a style="text-decoration: none;" href="login.php">Register</a>
+        <a style="text-decoration: none;" href="register.php">Register</a>
         </p>
-        <button class=" mb-3 btn-primary" type="submit"  name="register">Login</button>
+        <button class=" mb-3 btn-primary" type="submit"  name="login">Login</button>
     </form>
 </div>
 
