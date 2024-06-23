@@ -6,7 +6,7 @@
         <div class="col-8">
           <div class="row">
               <?php  
-              for($i = 0 ; $i < 6 ; $i++ ){
+              for($i = 0 ; $i < 4 ; $i++ ){
                       ?>
                     <div class="col-4 mt-2">
                           <div class="card "   >
