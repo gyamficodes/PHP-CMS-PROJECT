@@ -4,6 +4,8 @@ $database = "basic_app";
 $user = "root";
 $password = "";
 
+
+
 //connecting to mysql database
 $connection = mysqli_connect($host , $user ,$password, $database) or die("Database can not connect");
 
